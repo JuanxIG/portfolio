@@ -1,0 +1,462 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Titillium Web", sans-serif;
+}
+
+:root {
+  --mainColor: #320b0c;
+  --mainColorLight: #c2c1c2;
+  --secondaryColor: #4e0504;
+  --textColor: #0f0f0f;
+  --thirdColor: #2d2e2e;
+}
+
+img {
+  width: 100%;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  padding: 0 2rem;
+  background-color: var(--mainColor);
+  color: var(--mainColorLight);
+}
+
+/* Menu Hamburguesa */
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #ecececec;
+}
+
+.abrir-menu,
+.cerrar-menu {
+    display: none;
+}
+
+@media screen and (max-width: 550px) {
+    .abrir-menu,
+    .cerrar-menu {
+        display: block;
+        border: 0;
+        font-size: 1.25rem;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .abrir-menu {
+        color: #c2c1c2;
+    }
+
+    .cerrar-menu {
+        color: #c2c1c2;
+    }
+
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #4e0504;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    }
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+        color: #4e0504;
+        z-index: 1;
+    }
+    
+    .nav-list {
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .nav-list li a {
+        color: #ecececec;
+    }
+}
+
+
+/* BODY  */
+
+/* HOME  */
+
+.introduction {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  height: 55vh;
+}
+
+.ft-perfil {
+  width: 200px;
+}
+
+.ft-perfil img {
+  border-radius: 20px;
+}
+
+.introduction-data {
+  width: 360px;
+}
+
+.bt-download {
+  color: #4e0504;
+  background: var(--mainColorLight);
+  border-radius: 10px;
+  padding: 5px;
+  border: 0px;
+}
+
+.lyd {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  height: 35vh;
+}
+
+.lyd ul {
+  list-style: inside;
+}
+
+.breve {
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.breveD {
+  width: 350px;
+}
+
+/* DEMO-SPECIFIC STYLES */
+
+.typewriter,
+.bt-download {
+  margin-bottom: 0.5rem !important;
+}
+
+.typewriter h1 {
+  color: #000000;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  width: 350px;
+  font-size: 20px;
+  animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+@media (min-width: 760px) {
+  .introduction {
+    flex-direction: row;
+  }
+
+  .ft-perfil {
+    width: 250px;
+  }
+
+  .typewriter h1 {
+    font-size: 21px;
+    width: 370px;
+  }
+
+  .lyd {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .breveD {
+    width: 450px;
+  }
+
+}
+
+@media (min-width: 1024px) {
+  .ft-perfil {
+    width: 320px;
+  }
+
+  .introduction-data {
+    width: 500px;
+  }
+
+  .typewriter h1 {
+    font-size: 27.5px;
+    width: 482px;
+  }
+}
+
+
+/* SOBRE MI  */
+
+.about {
+    text-align: center;
+    margin-top: 5vh;
+}
+
+.aboutMe {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    height: 60.5vh;
+    margin-top: 5px;
+  }
+  
+  .rating {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  
+  .elemento-rating {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .aboutMe-text {
+    margin: 0 auto;
+    width: 300px;
+  }
+  
+  @media (min-width: 760px) {
+    .aboutMe {
+      flex-direction: row;
+      justify-content: space-evenly;
+      text-align: center;
+      height: 30vh;
+      align-items: center;
+    }
+  
+    .aboutMe-text {
+      margin: 0;
+      width: 430px;
+    }
+  }
+  
+  .text-box {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  
+  .aboutMe-h1 {
+      font-weight: 900;
+      background-color: #000;
+      color: #fff;
+      display: block;
+      padding: .5em;
+  }
+  
+  .aboutMe-h1:nth-child(2) {
+      position: absolute;
+      background-color: #fff;
+      color: #000;
+      clip-path: inset(-1% -1% 50% -1%); 
+  }
+  
+  .aboutMe-p {
+      font-weight: 900;
+      margin-top: 1em;
+      text-align: center;
+      span {
+          display: block;
+          transform: rotate(90deg);
+          margin-top: .25em;
+      }
+  }
+  
+  .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+  }
+  
+  @media (max-width: 760px) {
+    .elemento-rating {
+      justify-content: flex-start;
+      margin: 0 auto;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .aboutMe-text {
+      margin: 0;
+      width: 560px;
+      font-size: 1.1rem;
+    }
+  }
+
+  .certificado {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 1vh;
+  }
+  
+  @media (max-width: 1040px) {
+    .certificado {
+      flex-direction: column;
+      align-items: center;
+      flex-wrap: wrap;
+      margin: 0 auto;
+    }
+  }
+  
+  @media (max-width: 590px) {
+    .certificado {
+      flex-direction: column;
+      align-items: center;
+      flex-wrap: wrap;
+      margin: 0 auto;
+    }
+  }
+  
+  .certificado-individual {
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    height: 150px;
+    padding-right: 10px;
+    padding-bottom: 3px;
+    margin-top: 6px;
+    margin-right: 6px;
+    border-color: black;
+    border-style: solid;
+    border-width: 1.5px;
+    border-radius: 4px;
+    background-color: white;
+  }
+  
+  .nombre-certificado {
+    color: firebrick;
+    font-size: 24px;
+    padding-top: 1vh;
+  }
+  
+  .descripcion-certificado {
+    font-size: 18px;
+    font-style: italic;
+  }
+  
+  .fecha-certificado {
+    font-size: 16px;
+  }
+  
+  .foto-certificado {
+    width: 50px;
+    height: 60px;
+    align-self: flex-start;
+    padding-right: 5px;
+    padding-top: 14px;
+  }
+  
+  @media (max-width: 1040px) {
+    .certificado-individual {
+      padding-top: 1vh;
+    }
+  }
+
+
+/* CONTACTO */
+
+.contacto-h1 {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.form-control {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.button-contacto {
+  border-radius: 10px;
+  color: var(--secondaryColor);
+  padding: 7px;
+  border: 1px solid #320b0c;
+}
+.contacto-form {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.form-control input, .form-control textarea {
+width: 300px;
+font: inherit;
+border: 1px solid #ccc;
+background: #f8f8f8;
+padding: 0.15rem 0.25rem;
+border-radius: 4px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .form-control input {
+    width: 400px;
+  }
+}
+

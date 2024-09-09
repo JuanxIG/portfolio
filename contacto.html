@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <title>Portafolio</title>
+
+      
+</head>
+<body>
+  <header id="header">
+    <h3>Mendieta</h3>
+    <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+    <nav class="nav" id="nav">
+        <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
+        <ul class="nav-list">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./aboutme.html">About Me</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Qué hacemos</a></li>
+            <li><a href="./contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+  </header>
+    <main>
+        <h1 class="contacto-h1">Muchas Gracias por Contactarse!</h1>
+        <div>
+            <form class="contacto-form">
+                <div class="form-control false"><label for="nombreEmpresa">Nombre de Empresa</label><input id="nombreEmpresa"
+                        type="text" value=""></div>
+                <div class="form-control false"><label for="nombreReclutador">Nombre de reclutador</label><input
+                        id="nombreReclutador" type="text" value=""></div>
+                <div class="form-control false"><label for="correoContacto">E-Mail de contacto</label><input id="correoContacto"
+                        type="text" value=""></div>
+                <div class="form-control false"><label for="telefonoContacto">Telefono de contacto</label><input
+                        id="telefonoContacto" type="text" value=""></div>
+                <div class="form-control false"><label for="tituloPuesto">Titulo de Puesto</label><input id="tituloPuesto" value="">
+                </div>
+                <div class="form-control false"><label for="descripcionPuesto">Mensaje</label><textarea id="descripcionPuesto"
+                        rows="6"></textarea></div>
+                <div class="form-control false"><label for="montoOfrecido">Monto Ofrecido</label><input id="montoOfrecido" value="">
+                </div><button class="button-contacto" type="submit">ENVIAR</button>
+            </form>
+        </div>
+
+    </main>
+    <footer>
+        
+    </footer>
+    <script src="./main.js"></script>
+
+</body>
+</html>
