@@ -97,10 +97,56 @@ header {
     }
 }
 
+/* FOOTER */
+
+
+footer {
+  text-align: center;
+  border-top: 5px solid black;
+  padding: 1rem;
+  margin-top: 1rem;
+  color: #320b0c;
+  align-items: center;
+  background-color: #320b0c;
+}
+
+footer p {
+  color: #c2c1c2;
+  margin: 0;
+}
+
+.ft1-p1 {
+  color: #c2c1c2;
+  font-size: 14px;
+}
+
+.ft1-p2 {
+  color: #c2c1c2;
+  font-size: 12px;
+}
+
+.ft1-p3 {
+  font-size: 10px;
+}
+
+.ft-img figure {
+  width: 95px;
+  margin: 0 auto;
+}
+
+.icon {
+  color: rgb(253, 253, 253);
+}
+
 
 /* BODY  */
 
 /* HOME  */
+
+.Introduccion-h1 {
+  text-align: center;
+  margin-top: 7.5px;
+}
 
 .introduction {
   display: flex;
@@ -108,7 +154,7 @@ header {
   justify-content: space-around;
   align-items: center;
   text-align: center;
-  height: 55vh;
+  margin-top: 10px;
 }
 
 .ft-perfil {
@@ -136,7 +182,6 @@ header {
   flex-direction: column;
   justify-content: space-around;
   text-align: center;
-  height: 35vh;
 }
 
 .lyd ul {
@@ -238,6 +283,7 @@ header {
 
 /* SOBRE MI  */
 
+
 .about {
     text-align: center;
     margin-top: 5vh;
@@ -248,7 +294,7 @@ header {
     flex-direction: column;
     justify-content: space-evenly;
     text-align: center;
-    height: 60.5vh;
+    
     margin-top: 5px;
   }
   
@@ -274,7 +320,7 @@ header {
       flex-direction: row;
       justify-content: space-evenly;
       text-align: center;
-      height: 30vh;
+      height: 60.5vh;
       align-items: center;
     }
   
@@ -411,6 +457,107 @@ header {
     }
   }
 
+/* CV */
+
+@media (max-width: 700px) {
+  .grupo-educacion {
+      margin-left: 3rem;
+  }
+}
+
+.grupo-educacion {
+
+  margin-top: 1.5rem;
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+
+
+.foto-educacion {
+  width: 100px;
+  height: 70px;
+  align-self: flex-start;
+  padding-right: 5px;
+}
+
+.titulo-educacion {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.fecha-educacion {
+  font-size: 18px;
+  font-style: italic;
+}
+
+@media (max-width: 700px) {
+  .grupo-experiencia {
+      margin-left: 3rem;
+  }
+
+}
+
+@media (min-width: 700px) {
+
+  .grupo-educacion {
+    display: flex;
+  }
+  
+
+  .elemento-educacion {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 0 auto;
+  }
+}
+
+.listado-completo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+
+
+.grupo-experiencia {
+  margin-top: 1.5rem;
+
+}
+
+.elemento-experiencia {
+  display: flex;
+  flex-direction: row;
+}
+
+.logo-empresa {
+  width: 40px;
+  height: 65px;
+  align-self: flex-start;
+  padding-right: 7px;
+  padding-top: 14px;
+}
+
+.titulo-experiencia {
+  color: darkred;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.empresa-experiencia {
+  font-size: 22px;
+}
+
+.duracion-experiencia {
+  font-size: 20px;
+  font-style: italic;
+}
+
+.ubicacion-experiencia {
+  font-size: 16px;
+}
 
 /* CONTACTO */
 
@@ -460,3 +607,47 @@ border-radius: 4px;
   }
 }
 
+/* SERVICIOS */
+
+.listadoServicios {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.listadoServicios div {
+ margin: 0 auto;
+ margin-top: 1.5rem;
+}
+
+.listadoServicios p {
+  width: 340px;
+ }
+ 
+
+
+.listadoServicios img{
+  width: 50px;
+  height: 50px;
+}
+
+@media only screen and (min-width: 700px) {
+  .listadoServicios p {
+    width: 600px;
+   }
+     
+}
+
+@media only screen and (min-width: 1024px) {
+  .listadoServicios p {
+    width: 100%;
+   }
+     
+}
+
+
+.general-h1 {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
