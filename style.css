@@ -7,6 +7,16 @@
   font-family: "Titillium Web", sans-serif;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
 :root {
   --mainColor: #320b0c;
   --mainColorLight: #c2c1c2;
@@ -320,7 +330,7 @@ footer p {
       flex-direction: row;
       justify-content: space-evenly;
       text-align: center;
-      height: 60.5vh;
+      height: 35.5vh;
       align-items: center;
     }
   
@@ -651,3 +661,4 @@ border-radius: 4px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
