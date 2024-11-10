@@ -28,24 +28,47 @@
     <main>
         <h1 class="contacto-h1">Muchas Gracias por Contactarse!</h1>
         <div>
-            <form class="contacto-form">
-                <div class="form-control false"><label for="nombreEmpresa">Nombre de Empresa</label><input id="nombreEmpresa"
-                        type="text" value=""></div>
-                <div class="form-control false"><label for="nombreReclutador">Nombre de reclutador</label><input
-                        id="nombreReclutador" type="text" value=""></div>
-                <div class="form-control false"><label for="correoContacto">E-Mail de contacto</label><input id="correoContacto"
-                        type="text" value=""></div>
-                <div class="form-control false"><label for="telefonoContacto">Telefono de contacto</label><input
-                        id="telefonoContacto" type="text" value=""></div>
-                <div class="form-control false"><label for="tituloPuesto">Titulo de Puesto</label><input id="tituloPuesto" value="">
-                </div>
-                <div class="form-control false"><label for="descripcionPuesto">Mensaje</label><textarea id="descripcionPuesto"
-                        rows="6"></textarea></div>
-                <div class="form-control false"><label for="montoOfrecido">Monto Ofrecido</label><input id="montoOfrecido" value="">
-                </div><button class="button-contacto" type="submit">ENVIAR</button>
-            </form>
+          <form class="contacto-form" id="contactForm">
+            <div class="form-control false">
+                <label for="nombreEmpresa">Nombre de Empresa</label>
+                <input id="nombreEmpresa" type="text" value="">
+                <small class="error-message" id="nombreEmpresaError"></small>
+            </div>
+            <div class="form-control false">
+                <label for="nombreReclutador">Nombre de reclutador</label>
+                <input id="nombreReclutador" type="text" value="">
+                <small class="error-message" id="nombreReclutadorError"></small>
+            </div>
+            <div class="form-control false">
+                <label for="correoContacto">E-Mail de contacto</label>
+                <input id="correoContacto" type="text" value="">
+                <small class="error-message" id="correoContactoError"></small>
+            </div>
+            <div class="form-control false">
+                <label for="telefonoContacto">Teléfono de contacto</label>
+                <input id="telefonoContacto" type="text" value="">
+                <small class="error-message" id="telefonoContactoError"></small>
+            </div>
+            <div class="form-control false">
+                <label for="tituloPuesto">Título de Puesto</label>
+                <input id="tituloPuesto" value="">
+                <small class="error-message" id="tituloPuestoError"></small>
+            </div>
+            <div class="form-control false">
+                <label for="descripcionPuesto">Mensaje</label>
+                <textarea id="descripcionPuesto" rows="6"></textarea>
+                <small class="error-message" id="descripcionPuestoError"></small>
+            </div>
+            <div class="form-control false">
+                <label for="montoOfrecido">Monto Ofrecido</label>
+                <input id="montoOfrecido" value="">
+                <small class="error-message" id="montoOfrecidoError"></small>
+            </div>
+            <button class="button-contacto" type="submit">ENVIAR</button>
+        </form>
+        
         </div>
-
+       
     </main>
     <footer>
         <div>
@@ -66,6 +89,6 @@
         </div>
       </footer>
     <script src="./main.js"></script>
-
+    <script src="./validaciones.js"></script>
 </body>
 </html>

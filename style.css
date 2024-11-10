@@ -289,7 +289,24 @@ footer p {
     width: 482px;
   }
 }
+/*BOTON SCROLL*/
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  font-size: 18px;
+  background-color: var(--mainColorLight);
+  color: var(--thirdColor);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
 
+#scrollToTopBtn:hover {
+  background-color: var(--mainColorLight);
+}
 
 /* SOBRE MI  */
 
@@ -600,6 +617,16 @@ footer p {
   width: 100%;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
+}
+.error-message {
+  color: red;
+  font-size: 0.9em;
+  display: none;
+}
+input, textarea {
+  display: block;
+  margin-bottom: 5px;
+  padding: 5px;
 }
 
 .form-control input, .form-control textarea {
